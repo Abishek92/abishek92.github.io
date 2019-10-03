@@ -96,7 +96,7 @@ hr.new5 {
 
 <div class="hero-image">
   <div class="hero-text">
-    <h1 style="font-size:30px"><I>Lorenz System</I></h1>
+    <h1 style="font-size:30px"><I><a href ="https://github.com/Abishek92/Lorenz_Attractor">Lorenz Attractor</a></I></h1>
     <p></p>
   </div>
 </div>
@@ -117,8 +117,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <li><a href="index.html">Home</a></li>
             <li><a href="Professional_Experience.html">Experience</a></li>
             <li><a href="Academic_Projects.html">Academic Projects</a></li>
-            <li><a href = "Skills.html">Tools</a></li>
             <li><a class = "active" href="Code.html">Code</a></li>
+            <li><a href = "Skills.html">Tools</a></li>
+
           </ul>
         </nav>
   <!-- The Grid -->
@@ -128,16 +129,25 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <h3><b>Dynamical Systems:</b></h3>
         Source codes for simulating dynamical systems can be found below.
   
-        <h4><b>Lorenz Attractor</b></h4>
+        <h4><b><i>Lorenz Attractor</b></i></h4>
         <p align = "justify">
         The Lorenz attractor (which is show on the top of this webpage) is a class of dynamical systems that exhibits <a href = "https://en.wikipedia.org/wiki/Chaos_theory">chaotic behaviour</a>. 
         A small change in initial conditions can lead to large changes in the solutions. This is popularly known as 
         <a href = "https://en.wikipedia.org/wiki/Butterfly_effect">"the butterfly effect</a>".
       </p>
 
+      <p align = "justify">
+        The code given <a href = "https://github.com/Abishek92/Lorenz_Attractor"><b>here</b></a> can be run on Matlab/Octave.<br>
+        
+        A 3-D plot of the simulation is shown below. <br>
+        <img src = "Lorenz_attractor.jpg"><br>       
+        </p>
+        
+    
       <hr class = "new4">
       <h3><b>Control:</b></h3>
       Source codes for simulating Control techniques in dynamical systems can be found below.
+      <h4><b><i>Two Car Vehicle Platoon using Adaptive Control</b></i></h4>
       <p align = "justify">
       Vehicle Platoons are used in transportation for optimizing flow of traffic. 
       Current research in autonomous driving also employ the use of vehicle platoons. There are several advanatages such as 
@@ -147,8 +157,24 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     The Python code given <a href = "https://github.com/Abishek92/Vehicle_Platoon_Simulation"> <b>here</b></a> simulates a two car platoon. The nominal distance between the platoon is maintained through an 
     adaptive control strategy. In addition to this, a Kalman filter is also implemented in order to reduce sensor noise.
     </p>
-
-
+    <p align = "justify">
+    The simulation was written for a couple of RC cars, where the velocity of the cars are given in mm/sec
+    and the distance between them which is measured through a noisy ultrasonic sensor is given in mm. 
+    The Kalman filter simulation is shown below. <br>
+    <img src="Platoon_kalman.jpeg"><br>
+  
+    </p>
+    <p align = "justify">
+    The simulation showcasing the convergence of the velocity estimate (which is the adaptive part) and the actual input 
+    to the second car is given below. <br>
+    As the estimate of the velocity converges to the actual value of the velocity of the previous car, the estimate achieves a steady state<br>
+    <img src="platoon_adaptive_estimate.jpeg"><br>
+    </p>
+    <p align = "justify">
+      Finally, the plots showing the convergence of the distance between two cars to a constant reference of 200 mm is shown.<br>
+      <img src = "platoon_distance_error.jpeg"><br>
+    </p>
+    <hr class = "new4">
 
  </div>
   </div> 
